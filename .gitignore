@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.local
+.env.production.local
+*.log
+.DS_Store
+dist/
+build/
+artifacts/
+cache/
+coverage/
+.hardhat/

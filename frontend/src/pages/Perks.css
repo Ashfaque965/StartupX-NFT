@@ -1,0 +1,215 @@
+.perks-page {
+  width: 100%;
+}
+
+.perks-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.perks-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.perks-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.perks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.perk-tier {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.perk-tier:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.tier-header {
+  padding: 2rem 1rem;
+  background: #f5f5f5;
+  border-top: 4px solid;
+  text-align: center;
+}
+
+.tier-header h2 {
+  color: #333;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.tier-perks {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.perk-benefit {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.perk-benefit:last-child {
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.check {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.perk-benefit p {
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.btn-get-tier {
+  margin: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-get-tier:hover {
+  background: #5568d3;
+  transform: translateY(-2px);
+}
+
+.revenue-sharing {
+  background: #f9f9f9;
+  padding: 4rem 2rem;
+}
+
+.revenue-sharing h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.revenue-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.revenue-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.revenue-card h3 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.revenue-card ol {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: #666;
+  line-height: 1.8;
+}
+
+.revenue-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  background: #fff3cd;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.legal-notice {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.legal-notice h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.notice-box {
+  background: #fff3cd;
+  border: 2px solid #ffc107;
+  border-radius: 8px;
+  padding: 2rem;
+  color: #333;
+}
+
+.notice-box p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.notice-box p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .perks-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .perks-grid {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+  }
+
+  .revenue-info {
+    grid-template-columns: 1fr;
+  }
+
+  .legal-notice {
+    padding: 2rem 1rem;
+  }
+
+  .notice-box {
+    padding: 1.5rem;
+  }
+}
